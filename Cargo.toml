@@ -4,3 +4,19 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+hashbrown = "0.16.0"
+ron = "0.12.0"
+serde = { version = "1.0.228", features = ["derive"] }
+tokio = { version = "1.48.0", features = ["macros", "process", "rt", "rt-multi-thread", "sync", "time"] }
+
+[dependencies.iced]
+git = "https://github.com/iced-rs/iced"
+version = "0.14.0-dev"
+features = [
+	"tokio",
+	"image",
+	"advanced",
+	"fira-sans",
+	"wgpu",
+	"tiny-skia"
+]
